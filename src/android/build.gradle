@@ -1,0 +1,13 @@
+repositories {
+    jcenter()
+}
+
+android {
+    defaultConfig{
+        manifestPlaceholders.TENCENT_APPID = cdvHelpers.getConfigPreference ('QQ_APPID', "")
+    }
+}
+
+dependencies {
+    compile 'cn.jiguang.sdk:jshare-qqmodel:1.6.0'
+}
